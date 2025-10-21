@@ -1,6 +1,6 @@
 import {Router} from 'express'
-import {TaskController} from '../controllers/task.controller'
-import {TaskService} from '../services/task.service'
+import {TaskController} from '../controllers/task.controller.js'
+import {TaskService} from '../services/task.service.js'
 
 const service = new TaskService()
 const controller = new TaskController(service)

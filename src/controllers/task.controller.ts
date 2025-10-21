@@ -1,4 +1,4 @@
-import {TaskService} from "../services/task.service";
+import {TaskService} from "../services/task.service.js";
 import type { Request, Response } from "express";
 
 interface TaskControllerInterface {

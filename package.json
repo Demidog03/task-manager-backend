@@ -1,7 +1,9 @@
 {
   "name": "task-manager-backend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
+  "builds": [{ "src": "api/**/*.ts", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/api/index.ts" }],
   "scripts": {
     "dev": "tsx watch src/main.ts",
     "start": "node dist/main.js",

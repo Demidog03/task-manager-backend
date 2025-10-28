@@ -1,6 +1,6 @@
 import 'dotenv/config'
-import { connectDB } from './db/db.js'
-import { createExpressApp } from './app.js'
+import { connectDB } from './core/db/db'
+import { createExpressApp } from './app'
 
 async function main() {
   try {
